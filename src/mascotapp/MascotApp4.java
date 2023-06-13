@@ -19,11 +19,13 @@ public class MascotApp4 {
         //creamos e instanciamos el OBJ de tipo ServicioMascota4
         ServicioMascota4 sm4 = new ServicioMascota4();
         
+        //creamos por defecto una cantidad de mascotas con valores definidos
         sm4.fabricaMascotasUnicas(10);
         sm4.mostrarMascotas();
         
         System.out.println("");
         
+        //creamos una cantidad de mascotas para introducirla por teclado
         sm4.fabricaMascotas(2);
         sm4.mostrarMascotas();
     }
