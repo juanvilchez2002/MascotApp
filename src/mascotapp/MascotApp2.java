@@ -1,6 +1,8 @@
 
 package mascotapp;
 
+import java.util.ArrayList;
+
 
 public class MascotApp2 {
 
@@ -18,6 +20,36 @@ public class MascotApp2 {
         for(String var: nombresArray){
             System.out.println(var);
         }
+        
+        //usando Collections
+        //el ArrayList se inicializa con dimension cero
+        ArrayList<String> nombresArrays = new ArrayList();
+        
+        //verificando el estado del ArrayList, de dimension 0
+        System.out.println(nombresArrays.size());
+        
+        //adicionando un elemento al ArrayList
+        for(int i=0; i<5; i++){
+            nombresArrays.add("Chiquito "+(i+1));
+        }
+                
+        System.out.println(nombresArrays.size());
+        
+        //mostrando los elementos
+        for(String var: nombresArrays){
+            System.out.println(var);
+        }
+        
+        //eliminando un elemento
+        nombresArrays.remove("Chiquito 5");
+        
+        System.out.println(nombresArrays.size());
+        
+        //mostrando los elementos
+        for(String var: nombresArrays){
+            System.out.println(var);
+        }
+        
     }
     
 }
