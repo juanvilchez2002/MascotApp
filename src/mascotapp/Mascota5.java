@@ -33,6 +33,10 @@ public class Mascota5 {
         System.out.println("----- Eliminando un registro -----");
         sm5.eliminarMascota(1);
         sm5.mostrarMascotas();
+        
+        System.out.println("----- Eliminando una mascota de nombre Juan -----");
+        sm5.eliminarMascotaPorNombre("Juan");        
+        sm5.mostrarMascotas();
 
     }
     

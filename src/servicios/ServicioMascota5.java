@@ -120,4 +120,17 @@ public class ServicioMascota5 {
             System.out.println("Error: Falla al eliminar el registro");
         }
     }
+    
+    //metodo para eliminar mascota por nombre
+    public void eliminarMascotaPorNombre(String nombre){
+    
+        for(int i=0; i<mascotas.size(); i++){
+            Mascota m = mascotas.get(i);
+            if(m.getNombre().equals(nombre)){
+                System.out.println("Eliminando mascota con nombre: "+nombre);
+                mascotas.remove(i);
+            }
+        }
+    
+    }
 }
