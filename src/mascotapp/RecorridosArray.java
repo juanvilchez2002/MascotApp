@@ -5,6 +5,7 @@
 package mascotapp;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -22,6 +23,22 @@ public class RecorridosArray {
         nombres.add("Julio");
         nombres.add("Daniel");
         nombres.add("Loro");
+        
+        //creando un obj de tipo Iterador
+        //patron para recorrer diferentes tipos de datos
+        //se habla de listas enlazdas
+        Iterator<String> it = nombres.iterator();
+        
+        //recorriendo el iterador
+        System.out.println("-------- recorrido con for mejorado -------");
+        while(it.hasNext()){
+            String aux = it.next();
+            System.out.println(aux);
+        }
+        
+        
+        
+        
         
         System.out.println("-------- recorrido con for mejorado -------");
         //recorremos y vemos los valors con for mejorado
@@ -51,6 +68,7 @@ public class RecorridosArray {
         System.out.println("");
         System.out.println("-------- recorrido de nombres -------");
         nombres.forEach((nombre)->System.out.println(nombre));
+        
         
     }
     
